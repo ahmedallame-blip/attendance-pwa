@@ -1,5 +1,4 @@
-https://script.google.com/macros/s/AKfycbwiCdx3RZWje849mflyntoLa65NeK6roV4ehn0tJkERtpJr9LEB2_wUSIrC3eKRjSbfCQ/exec
-
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwiCdx3RZWje849mf1yntoLa65Nek6roV4ehn0tJkERtpJr9LEB2_wUSIrC3eKRjSbfCQ/exec";
 let currentUser = null;
 
 /* -------------------- أدوات عامة -------------------- */
