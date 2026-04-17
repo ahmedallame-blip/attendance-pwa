@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>نظام الحضور والانصراف</title>
+
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+
+<meta name="theme-color" content="#2563eb">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+</head>
+<body>
+
+<div class="app">
+
+<div class="card">
+
+<h1>نظام الحضور والانصراف</h1>
+<p class="sub">نسخة الهاتف - أوفلاين</p>
+
+<div id="networkStatus" class="online">متصل</div>
+
+<div id="loginBox">
+
+<input type="text" id="username" placeholder="اسم المستخدم">
+<input type="password" id="password" placeholder="كلمة المرور">
+
+<button onclick="login()">تسجيل الدخول</button>
+
+</div>
+
+<div id="dashboard" class="hidden">
+
+<h2 id="welcome"></h2>
+
+<button class="green" onclick="checkIn()">تسجيل حضور</button>
+
+<button class="red" onclick="checkOut()">تسجيل انصراف</button>
+
+<button class="orange" onclick="extraCheck()">تحقق إضافي</button>
+
+<button class="gray" onclick="logout()">تسجيل خروج</button>
+
+</div>
+
+<div id="msg">جاهز للعمل</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

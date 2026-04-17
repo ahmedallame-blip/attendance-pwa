@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.sub {
+  margin: 0 0 18px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+#networkStatus {
+  text-align: center;
+  font-weight: 700;
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  font-size: 20px;
+}
+
+.online {
+  background: #d9f7df;
+  color: #157347;
+}
+
+.offline {
+  background: #fde2e1;
+  color: #b42318;
+}
+
+input {
+  width: 100%;
+  padding: 18px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 18px;
+  margin-bottom: 14px;
+  font-size: 28px;
+  background: #fff;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 16px;
+  margin-top: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:not(.green):not(.red):not(.orange):not(.gray) {
+  background: #2563eb;
+  color: white;
+}
+
+.green {
+  background: #16a34a;
+  color: white;
+}
+
+.red {
+  background: #dc2626;
+  color: white;
+}
+
+.orange {
+  background: #f59e0b;
+  color: white;
+}
+
+.gray {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+#msg {
+  margin-top: 18px;
+  background: #eef3ff;
+  color: #1e3a8a;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: center;
+  white-space: pre-line;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+
+#welcome {
+  text-align: center;
+  font-size: 26px;
+  margin: 8px 0 16px;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 20px 14px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+
+  input,
+  button {
+    font-size: 22px;
+    padding: 16px 14px;
+  }
+
+  #msg {
+    font-size: 18px;
+  }
+
+  #networkStatus {
+    font-size: 18px;
+  }
+
+  #welcome {
+    font-size: 22px;
+  }
+}
